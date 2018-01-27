@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import routerOne from 'components/router-one'
-import routerTwo from 'components/router-two'
+import routerOne from '../components/router-one'
+import routerTwo from '../components/router-two'
 
 Vue.use(Router)
 

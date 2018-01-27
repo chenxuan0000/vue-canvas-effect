@@ -5,3 +5,6 @@
 /LICENSE
 /README.md
 /.babelrc
+/.idea
+/node_modules
+/build

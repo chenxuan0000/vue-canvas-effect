@@ -19,5 +19,8 @@ See the GitHub [release history](https://github.com/chenxuan0000/vue-canvas-effe
 ## Contribution
 Welcome to give some Suggestions and optimizations, and look forward to your `Pull Request`.
 
+## TKS
+https://github.com/FreAK19/circleMagic.js
+
 ## License
 vue-seamless-scroll is open source and released under the [MIT License](LICENSE).

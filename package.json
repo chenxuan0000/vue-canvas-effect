@@ -1,6 +1,6 @@
 {
   "name": "vue-canvas-effect",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A simple, canvas effect for Vue.js",
   "main": "dist/vue-canvas-effect.min.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "deep-assign": "^2.0.0",

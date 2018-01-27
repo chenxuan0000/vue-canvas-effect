@@ -3,11 +3,15 @@ const merge = require('deep-assign')
 const webpack = require('webpack')
 const options = require('./options')
 const base = require('./webpack.base.js')
+
 const config = merge(base, {
   entry: options.paths.src.main,
   output: {
-    filename: '[name].js',
-    path: options.paths.output.main
+    filename: options.isProduction ? 'vue-canvas-effect.min.js' : 'vue-canvas-effect.js',
+    path: options.paths.output.main,
+    library: 'vueCanvasEffect',
+    libraryExport: 'default',
+    libraryTarget: 'umd'
   },
   plugins: []
 })
@@ -28,12 +32,12 @@ if (options.isProduction) {
     }),
 
     // Minify with dead-code elimination
-    // new webpack.optimize.UglifyJsPlugin({
-    //   sourceMap: false,
-    //   compress: {
-    //     warnings: false
-    //   }
-    // })
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      compress: {
+        warnings: false
+      }
+    })
   ])
 }
 module.exports = config

@@ -1,14 +1,19 @@
 <template>
     <div class="router1">
-        <neon-effect></neon-effect>
+        <neon-effect :options="option"></neon-effect>
     </div>
 </template>
 <script>
-  import neonEffect from 'packages/neon/src/main.vue'
+  import neonEffect from 'src/components/neon'
 
   export default {
     data () {
-      return {}
+      return {
+        option: {
+          rate: 22,
+
+        }
+      }
     },
     props: {},
     computed: {},

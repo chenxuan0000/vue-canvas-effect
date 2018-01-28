@@ -1,8 +1,8 @@
 {
   "name": "vue-canvas-effect",
-  "version": "0.0.5",
-  "description": "A simple, canvas effect for Vue.js",
-  "main": "dist/vue-canvas-effect.min.js",
+  "version": "0.0.12",
+  "description": "A simple, canvas effect collection for Vue.js",
+  "main": "dist/vueCanvasEffect.min.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.js --open --inline --hot",
     "build:debug": "cross-env NODE_ENV=debug webpack --config build/webpack.dist.js",
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/chenxuan0000/vue-canvas-effect"
   },
   "keywords": [
-    "vue",
+    "collection",
     "vuejs",
     "canvas",
     "components"
@@ -27,11 +27,12 @@
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^7.1.2",
-    "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
+    "url-loader": "^0.6.2",
+    "file-loader": "^1.1.6",
     "deep-assign": "^2.0.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "node-sass": "^4.5.2",

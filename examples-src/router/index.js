@@ -9,14 +9,14 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/routerOne'
+      redirect: '/router_1'
     },
     {
-      path: '/routerOne',
+      path: '/router_1',
       component: routerOne
     },
     {
-      path: '/routerTwo',
+      path: '/router_2',
       component: routerTwo
     }
   ]

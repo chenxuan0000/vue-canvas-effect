@@ -7,11 +7,11 @@ const base = require('./webpack.base.js')
 const config = merge(base, {
   entry: options.paths.src.main,
   output: {
-    filename: options.isProduction ? 'vue-canvas-effect.min.js' : 'vue-canvas-effect.js',
+    filename: options.isProduction ? '[name].min.js' : '[name].js',
     path: options.paths.output.main,
-    library: 'vueCanvasEffect',
-    libraryExport: 'default',
-    libraryTarget: 'umd'
+    library: '[name]',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   plugins: []
 })
@@ -24,18 +24,13 @@ config.plugins = config.plugins.concat([
 ])
 
 if (options.isProduction) {
-  // production only
   config.plugins = config.plugins.concat([
-    // Set the production environment
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
-    }),
-
-    // Minify with dead-code elimination
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: false,
       compress: {
-        warnings: false
+        warnings: false,
+        drop_debugger: true,
+        drop_console: true
       }
     })
   ])

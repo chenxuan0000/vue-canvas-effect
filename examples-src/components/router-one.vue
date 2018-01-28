@@ -1,5 +1,6 @@
 <template>
     <div class="router1">
+        <span class="router-h5">neonEffect(蜂窝霓虹灯)</span>
         <neon-effect :options="option"></neon-effect>
     </div>
 </template>

@@ -1,7 +1,6 @@
 'use strict'
 const options = require('./options')
-
-module.exports = {
+let config = {
   resolve: {
     modules: [
       options.paths.root,
@@ -28,8 +27,6 @@ module.exports = {
       }
     ]
   },
-  // Stats is used to customize Webpack's console output
-  // https://webpack.js.org/configuration/stats/
   stats: {
     hash: false,
     colors: true,
@@ -39,3 +36,14 @@ module.exports = {
     timings: true
   }
 }
+
+if (process.env.NODE_ENV !== 'production') {
+  config.module.rules.push(
+    {test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=8192'}
+  )
+  config.module.rules[0].options.loaders = {
+    scss: 'vue-style-loader!css-loader!sass-loader'
+  }
+}
+
+module.exports = config

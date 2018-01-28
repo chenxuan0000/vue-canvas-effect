@@ -40,8 +40,4 @@ const config = merge(base, {
   ]
 })
 
-config.module.rules[0].options.loaders = {
-  scss: 'vue-style-loader!css-loader!sass-loader'
-}
-
 module.exports = config

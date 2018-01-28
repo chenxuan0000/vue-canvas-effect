@@ -3,6 +3,9 @@
 </template>
 <script>
   require('comutils/animationFrame')()
+  import resize from '../../util/resize'
+  const copyObj = require('comutils/copyObj')
+
   export default {
     name: 'neonEffect',
     data () {
@@ -39,7 +42,7 @@
     },
     computed: {
       opts () {
-        return Object.assign({}, this.defaultOptions, this.options)
+        return copyObj({}, this.defaultOptions, this.options)
       }
     },
     components: {},
@@ -58,7 +61,8 @@
       ctx.fillRect(0, 0, w, h);
 
       let loop = () => {
-        this.requestAniId = window.requestAnimationFrame(loop)
+        cancelAnimationFrame(this.requestAniId)
+        this.requestAniId = requestAnimationFrame(loop)
         ++tick
         ctx.globalCompositeOperation = 'source-over'
         ctx.shadowBlur = 0
@@ -117,7 +121,7 @@
 
       loop()
 
-      window.addEventListener('resize', () => {
+      resize(() => {
         w = c.width = window.innerWidth
         h = c.height = window.innerHeight
         ctx.fillRect(0, 0, w, h)
@@ -125,7 +129,8 @@
         this.opts.cy = h / 2
         dieX = w / 2 / this.opts.len
         dieY = h / 2 / this.opts.len
-      });
+      })
+
     },
     beforeDestroy () {
       window.cancelAnimationFrame(this.requestAniId)

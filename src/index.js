@@ -1,29 +1,32 @@
 import Neon from './components/neon';
+import Bubbles from './components/bubbles';
 
-const components = {
-  Neon
-};
+const components = [
+  Neon,
+  Bubbles
+]
 
-const canvas = {
-    ...components
-};
+const componentsObj = {
+  Neon,
+  Bubbles
+}
 
-const install = function(Vue, opts = {}) {
-    if (install.installed) return;
+const install = function (Vue) {
+  if (install.installed) return;
 
-    Object.keys(canvas).forEach(key => {
-        Vue.component(key, canvas[key]);
-    });
+  components.map(component => {
+    Vue.component(component.name, component);
+  });
 };
 
 // auto install
 if (typeof window !== 'undefined' && window.Vue) {
-    install(window.Vue);
+  install(window.Vue);
 }
 
 const API = {
-    install,
-    ...components
+  install,
+  ...componentsObj
 };
 
 module.exports.default = module.exports = API;   // eslint-disable-line no-undef

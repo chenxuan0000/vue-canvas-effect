@@ -4,7 +4,8 @@ const webpack = require('webpack')
 const options = require('./options')
 const path = require('path')
 const base = require('./webpack.base.js')
-function resolve(dir) {
+
+function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -35,10 +36,5 @@ const config = merge(base, {
     noInfo: true
   }
 })
-
-// First item in module.rules array is Vue
-config.module.rules[0].options.loaders = {
-  scss: 'vue-style-loader!css-loader!sass-loader'
-}
 
 module.exports = config

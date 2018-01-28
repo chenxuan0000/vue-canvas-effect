@@ -59,6 +59,7 @@
       let href = location.href,
         len = href.length,
         index = href.substr(len - 1, 1)
+      this.nowRouterIndex = index
       if (index > 1) {
         this.preState = false
         this.nextState = true

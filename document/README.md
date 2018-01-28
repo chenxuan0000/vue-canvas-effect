@@ -118,9 +118,10 @@ new Vue({
 > name: neonEffect
 ```html
 // 默认标签名
-<neon-effect></neon-effect>
+<neon-effect :options="options"></neon-effect>
 ```
 ```javascript
+//default options
         {
           len: 20, //五边形的单边长度
           count: 50, //多少线重叠
@@ -131,7 +132,7 @@ new Vue({
           sparkSize: 2,//闪烁点的大小
           contentLight: 60, // [0,100] 色块的亮度
           shadowToTimePropMult: 6, //五边形的内环阴影大小
-          bgColorArr: [0, 0, 0], //背景色数组
+          bgColorArr: [0, 0, 0] //背景色数组
         }
 ```
 
@@ -140,9 +141,10 @@ new Vue({
 > name: bubblesEffect
 ```html
 // 默认标签名
-<bubbles-effect></bubbles-effect>
+<bubbles-effect :options="options"></bubbles-effect>
 ```
 ```javascript
+//default options
         {
           color: 'rgba(225,225,225,0.5)', //气泡颜色
           radius: 15, //气泡半径

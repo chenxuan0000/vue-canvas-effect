@@ -54,7 +54,16 @@
       }
     },
     computed: {},
-    components: {}
+    components: {},
+    created () {
+      let href = location.href,
+        len = href.length,
+        index = href.substr(len - 1, 1)
+      if (index > 1) {
+        this.preState = false
+        this.nextState = true
+      }
+    }
   }
 </script>
 
@@ -69,6 +78,7 @@
         font-size: 16px;
         text-align: center;
     }
+
     .arrow-left {
         position: fixed;
         left: 4%;

@@ -1,7 +1,7 @@
 <template>
     <div class="router2">
         <span class="router-h5">bubblesEffect(气泡效果)</span>
-        <bubbles></bubbles>
+        <bubbles :options="options"></bubbles>
     </div>
 </template>
 <style lang="scss" scoped>
@@ -21,7 +21,13 @@
     data () {
       return {}
     },
-    computed: {},
+    computed: {
+      options() {
+        return {
+          clearOffset: 0.4
+        }
+      }
+    },
     components: {
       bubbles
     }

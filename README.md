@@ -4,8 +4,11 @@
 [![Build Status](https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/vue-canvas-effect) ![](https://img.shields.io/npm/v/vue-canvas-effect.svg)
                                                                       
 <p align="center">
-    <img src="http://p2.qqyou.com/biaoqing/UploadPic/2013-2/1/2013020120565544702.gif" width="480"/>
-</p> 
+  <br>
+  <img width="700" src="./document/canvas-logo.svg" alt="logo of vue-canvas-effect repository">
+  <br>
+  <br>
+</p>
                                             
 <p align="center">
     🌾 <a href="https://chenxuan0000.github.io/vue-canvas-effect/index.html">online demo</a> |

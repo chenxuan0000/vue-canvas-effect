@@ -11,7 +11,7 @@
         width: 100%;
         left: 0;
         top: 0;
-        background-image: url('//p39fp1l31.bkt.clouddn.com/demo1.jpg');
+        background-image: url('http://p39fp1l31.bkt.clouddn.com/demo1.jpg');
     }
 </style>
 <script>

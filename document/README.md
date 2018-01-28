@@ -130,7 +130,7 @@ See the GitHub [查看历史版本](https://github.com/chenxuan0000/vue-canvas-e
 ## 贡献
 欢迎给出一些意见和优化，期待你的 `Pull Request`。
 
-## TKS
+## Tks
 [circleMagic](https://github.com/FreAK19/circleMagic.js)
 
 ## License

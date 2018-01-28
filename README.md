@@ -12,6 +12,19 @@
    📘 <a href="./document/README.md">中文文档</a> 
 </p>
                                    
+## Contents
+
+- [**`Browser support`**](#Browser-support)
+- [**`Installation`**](#Installation)
+- [**`Usage`**](#Usage)
+    - [**`ES6`**](#ES6)
+        - [**`On demand(Recommend ways)`**](#On-demand(Recommend-ways))
+        - [**`Fully import(no Recommend ways)`**](#Fully-import(no-Recommend-ways))
+    - [**`normal use`**](#normal-use)
+- [**`Component List`**](#Component-List)
+- [**`Changelog`**](#Changelog)
+- [**`Contribution`**](#Contribution)
+- [**`TKS`**](#TKS)
 
 ## Browser support
 | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/edge.png" alt="IE" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>IE | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari-ios.png" alt="iOS Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>iOS | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome-android.png" alt="Chrome for Android" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Android |
@@ -52,7 +65,7 @@ npm install babel-plugin-import --save-dev
 
 ```javascript
 import Vue from 'vue'
-import { neon} from 'vue-canvas-effect';
+import {neon} from 'vue-canvas-effect';
 Vue.component(neon.name, neon);
 `or`
 Vue.component('customName', neon);
@@ -98,7 +111,17 @@ new Vue({
 
 ## Component List
 - [neon]()
+> name: neonEffect
+```html
+// default tagName use
+<neon-effect></neon-effect>
+```
 - [bubbles]()
+> name: bubblesEffect
+```html
+// default tagName use
+<bubbles-effect></bubbles-effect>
+```
 
 
 ## Changelog

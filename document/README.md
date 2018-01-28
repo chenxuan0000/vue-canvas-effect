@@ -5,8 +5,8 @@
 
 <p align="center">
   <br>
-  <img width="700" src="./document/canvas-logo.svg" alt="logo of vue-canvas-effect repository">
   <br>
+  <img width="600" src="./document/canvas-logo.svg" alt="logo of vue-canvas-effect repository">
   <br>
 </p>
                                             

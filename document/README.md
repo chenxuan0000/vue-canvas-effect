@@ -18,13 +18,13 @@
 - [**`安装`**](#安装)
 - [**`使用`**](#使用)
     - [**`ES6`**](#ES6)
-        - [**`按需加载(推荐)`**](#按需加载(推荐))
-        - [**`全部引入(不推荐)`**](#全部引入(不推荐))
-    - [**`普通模式 (script 标签)`**](#普通模式 (script 标签))
+        - [**`按需加载`**](#按需加载)
+        - [**`全部引入`**](#全部引入)
+    - [**`普通模式`**](#普通模式)
 - [**`组件列表`**](#组件列表)
 - [**`修改日志`**](#修改日志)
 - [**`贡献`**](#贡献)
-- [**`TKS`**](#TKS)                        
+- [**`TKS`**](#tks)                        
 
 ## 浏览器兼容
 | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/edge.png" alt="IE" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>IE | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari-ios.png" alt="iOS Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>iOS | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome-android.png" alt="Chrome for Android" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Android |
@@ -42,8 +42,8 @@ npm install vue-canvas-effect --save
 ## 使用
 ### ES6
 
-#### 按需加载(推荐)
-
+#### 按需加载
+> 推荐
 > 首先安装babel-plugin-import依赖
 
 ```javascript
@@ -75,7 +75,8 @@ new Vue({
 })
 ```
 
-#### 全部引入(不推荐)
+#### 全部引入
+> 不推荐
 
 ```javascript
 import Vue from 'vue'
@@ -87,8 +88,8 @@ new Vue({
 })
 ```
 
-### 普通模式 (script 标签)
-
+### 普通模式
+> script 标签
 ```html
 <html>
 <head>
@@ -130,7 +131,7 @@ See the GitHub [查看历史版本](https://github.com/chenxuan0000/vue-canvas-e
 ## 贡献
 欢迎给出一些意见和优化，期待你的 `Pull Request`。
 
-## Tks
+## TKS
 [circleMagic](https://github.com/FreAK19/circleMagic.js)
 
 ## License

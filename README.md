@@ -17,11 +17,11 @@
 - [**`Browser support`**](#browser-support)
 - [**`Installation`**](#installation)
 - [**`Usage`**](#usage)
-    - [**`ES6`**](#eS6)
-        - [**`On demand(Recommend ways)`**](#on-demand(recommend-ways))
-        - [**`Fully import(no Recommend ways)`**](#fully-import(no-recommend-ways))
+    - [**`ES6`**](#es6)
+        - [**`On demand`**](#on-demand)
+        - [**`Fully import`**](#fully-import)
     - [**`normal use`**](#normal-use)
-- [**`Component List`**](#component-List)
+- [**`Component List`**](#component-list)
 - [**`Changelog`**](#changelog)
 - [**`Contribution`**](#contribution)
 - [**`TKS`**](#tks)
@@ -42,8 +42,8 @@ npm install vue-canvas-effect --save
 ## Usage
 ### ES6
 
-#### On demand(Recommend ways)
-
+#### On demand
+> Recommend ways
 > First, install babel-plugin-import
 
 ```javascript
@@ -75,7 +75,8 @@ new Vue({
 })
 ```
 
-#### Fully import(no recommend ways)
+#### Fully import
+> no recommend ways
 
 ```javascript
 import Vue from 'vue'
@@ -87,7 +88,8 @@ new Vue({
 })
 ```
 
-### normal use (script tag)
+### normal use
+> script tag
 
 ```html
 <html>
@@ -130,7 +132,7 @@ See the GitHub [release history](https://github.com/chenxuan0000/vue-canvas-effe
 ## Contribution
 Welcome to give some Suggestions and optimizations, and look forward to your `Pull Request`.
 
-## Tks
+## TkS
 [circleMagic](https://github.com/FreAK19/circleMagic.js)
 
 ## License
